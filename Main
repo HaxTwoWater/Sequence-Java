@@ -1,0 +1,147 @@
+//--------------Made by HaxTwoWater---------------------
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("------------------------------------");
+        System.out.println("Chose a language :");
+        System.out.println("1:Français 2:English");
+        System.out.println("------------------------------------");
+        int ask = sc.nextInt();
+
+
+        switch (ask){
+
+
+            case 1:
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("Vous avez choisie le français !");
+                french();
+                break;
+
+            case 2:
+
+
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("\n");
+                System.out.println("You took the English !");
+                english();
+                break;
+
+
+        }
+    }
+
+
+    public static void french() {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("Alors, quelles suites voulez-vous utiliser ?");
+        System.out.println("1:Géométrique 2:Arithmétique");
+        int ask = sc.nextInt();
+        ReSwitch(ask);
+        System.out.println("Nouveau calcul ? (écrit 1 ou quitte le programme)");
+        int ask1 = sc.nextInt();
+        switch (ask1){
+            case 1:
+                french();
+                break;
+        }
+    }
+
+
+    public static void english() {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("Wich type of sequence you want to use ?");
+        System.out.println("1:Geometrical 2:Arithmetic");
+        int ask = sc.nextInt();
+        ReSwitch(ask);
+        System.out.println("New sequence ? (press 1 or leave the program)");
+        int ask1 = sc.nextInt();
+        switch (ask1){
+            case 1:
+                english();
+                break;
+        }
+        
+    }
+
+
+    public static void ReSwitch(int x){
+
+
+        switch (x){
+            case 1:
+                GSeq();
+                break;
+            case 2:
+                Aseg();
+                break;
+        }
+    }
+
+
+    public static void GSeq() {
+
+        Scanner sc = new Scanner(System.in);
+        int n;
+        int Uo;
+        int q;
+        System.out.println("Un = Uo x q ^ n");
+        System.out.println("Uo = ");
+        Uo = sc.nextInt();
+        System.out.println("q = ");
+        q = sc.nextInt();
+        System.out.println("n = ");
+        n = sc.nextInt();
+        int Un = Uo * q ^ n;
+        System.out.println(Un);
+    }
+
+
+    public static void Aseg() {
+
+        Scanner sc = new Scanner(System.in);
+        int n;
+        int Uo;
+        int q;
+        System.out.println("Un = Uo + q x n");
+        System.out.println("Uo = ");
+        Uo = sc.nextInt();
+        System.out.println("q = ");
+        q = sc.nextInt();
+        System.out.println("n = ");
+        n = sc.nextInt();
+        int Un = Uo + q * n;
+        System.out.println(Un);
+
+    }
+
+
+}
+//--------------Made by HaxTwoWater---------------------
